@@ -4,14 +4,16 @@ import Header from './components/Header';
 import CoinDetailPage from './pages/CoinDetailPage';
 import CoinSummaryPage from './pages/CoinSummaryPage';
 import './App.css';
+import { WatchListContextProvider } from './context/watchListContext';
 
 const App = () => {
     return (
         <div>
+            <WatchListContextProvider>
             <BrowserRouter>
             <Header/>
             <Route exact path="/" component={CoinSummaryPage} />
-            </BrowserRouter>
+            </BrowserRouter></WatchListContextProvider>
         </div>
     )
 };
