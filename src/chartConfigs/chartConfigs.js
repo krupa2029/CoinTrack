@@ -8,13 +8,13 @@ export const historyOptions = {
         duration: 2000
     },
 
-    maintainAspectRation: false,
+    maintainAspectRatio: false,
     responsive: true,
     scales: {
         xAxes: [
             {
                 type: "time",
-                distribution: "linear"
+                distribution: "linear",
             },
         ],
     },

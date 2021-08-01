@@ -35,6 +35,8 @@ const CoinDetailPage = () => {
                         params: {
                             vs_currency: "inr",
                             days: "7",
+                            // interval: "daily",
+                           
                         },
                     }),
 
@@ -42,6 +44,7 @@ const CoinDetailPage = () => {
                         params: {
                             vs_currency: "inr",
                             days: "30",
+                           
                         },
                     }),
 
@@ -49,6 +52,7 @@ const CoinDetailPage = () => {
                         params: {
                             vs_currency: "inr",
                             days: "365",
+                            
                         },
                     }),
                     coinGecko.get("/coins/markets", {
@@ -79,7 +83,7 @@ const CoinDetailPage = () => {
         return (
             <div className="coinlist">
                 <HistoryChart data={coinData}/>
-                <CoinData />
+                <CoinData data={coinData.detail}/>
             </div>
         );
     };

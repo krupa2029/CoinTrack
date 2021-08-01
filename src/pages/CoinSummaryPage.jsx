@@ -11,4 +11,4 @@ const CoinSummaryPage = () => {
     )
 }
 
-export default CoinSummaryPage
+export default CoinSummaryPage;
