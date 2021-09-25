@@ -7,7 +7,7 @@ export const WatchListContextProvider = props => {
 
     console.log();
     const [watchList, setWatchList] = useState(
-        localStorage.getItem("watchList").split(",") || [
+        localStorage.getItem("watchList")?.split(",") || [
             "bitcoin",
             "ethereum",
             "ripple",
