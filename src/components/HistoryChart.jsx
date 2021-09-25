@@ -48,7 +48,8 @@ const HistoryChart = ({ data }) => {
         if (detail) {
             return (
                 <>
-                    <p className="my-0">{detail.current_price.toFixed(2)} INR</p>
+                    <h5>{detail.name}</h5>
+                    <p className="my-0">$ {detail.current_price.toFixed(2)}</p>
                     <p className={
                         detail.price_change_24h < 0 ? "text-danger my-0" : "text-success my-0"
                     }>{detail.price_change_percentage_24h.toFixed(2)}%</p>
